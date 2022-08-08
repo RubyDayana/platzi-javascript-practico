@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas | Curso práticoo JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="main container">
+        <header class="text-center">
+            <h1>Figuras geométricas</h1>
+            <p>Este es el primer taller del curso práctico de Javascript</p>
+        </header>
+        <div class="row">
+            <section class="card col-sm-12 col-md-12 col-lg-5 col-xl-5 m-2">
+                <div class="card-body">
+                    <h2 class="card-title">Cuadrado</h2>
+                    <form>
+                        <label for="InputCuadrado" class="form-label">Escribe cuanto mide cada lado de tu
+                            cuadrado:</label>
+                        <input id="InputCuadrado" type="number" name="InputCuadrado" class="form-control mb-2" />
+
+                        <button type="button" onclick="calcularPerimetroCuadrado()" class="btn btn-primary">Calcular
+                            perímetro</button>
+                        <button type="button" onclick="calcularAreaCuadrado()" class="btn btn-success">Calcular
+                            área</button>
+
+                        <p id="ResultCuadrado" class="h6 mt-4 mb-2"></p>
+                    </form>
+                </div>
+            </section>
+
+
+            <section class="card col-sm-12 col-md-12 col-lg-5 col-xl-5 m-2">
+                <div class="card-body">
+                    <h2 class="card-title">Circulo</h2>
+                    <form>
+                        <label for="InputRadioCirculo" class="form-label">Escribe cuanto mide el Radio de tu
+                            Circulo:</label>
+                        <input id="InputRadioCirculo" type="number" name="InputRadioCirculo"
+                            class="form-control mb-2"/>
+
+                        <button type="button" onclick="calcularPerimetroCirculo()" class="btn btn-primary">Calcular
+                            perímetro</button>
+                        <button type="button" onclick="calcularAreaCirculo()" class="btn btn-success">Calcular
+                            área</button>
+                            <p id="ResultCirculo" class="h6 mt-4 mb-2"></p>
+                    </form>
+                </div>
+            </section>
+
+            <section class="card col-sm-12 col-md-12 col-lg-5 col-xl-5 m-2">
+                <div class="card-body">
+                    <h2 class="card-title">Triángulo</h2>
+                    <form>
+                        <label for="InputTrianguloLadoA" class="form-label">Escribe cuanto mide el lado A de tu
+                            triángulo:</label>
+                        <input id="InputTrianguloLadoA" type="number" name="InputTrianguloLadoA"
+                            class="form-control mb-2"/>
+
+                        <label for="InputTrianguloLadoB" class="form-label">Escribe cuanto mide el lado B de tu
+                            triángulo:</label>
+                        <input id="InputTrianguloLadoB" type="number" name="InputTrianguloLadoB"
+                            class="form-control mb-2"/>
+
+                        <label for="InputTrianguloBase" class="form-label">Escribe cuanto mide la Base de tu
+                            triángulo:</label>
+                        <input id="InputTrianguloBase" type="number" name="InputTrianguloBase"
+                            class="form-control mb-2"/>
+
+                        <label for="InputTrianguloAltura" class="form-label">Escribe la Altura de tu triángulo:</label>
+                        <input id="InputTrianguloAltura" type="number" name="InputTrianguloAltura"
+                            class="form-control mb-2"/>
+
+                        <button type="button" onclick="calcularPerimetroTriangulo()" class="btn btn-primary">Calcular
+                            perímetro</button>
+                        <button type="button" onclick="calcularAreaTriangulo()" class="btn btn-success">Calcular
+                            área</button>
+                            <p id="ResultTriangulo" class="h6 mt-4 mb-2"></p>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="../js/figuras.js"></script>
+</body>
+
+</html>
